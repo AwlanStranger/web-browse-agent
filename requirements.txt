@@ -2,4 +2,4 @@ python-dotenv
 playwright
 asyncio
 datetime
-browser_use
+browser-use
