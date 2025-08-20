@@ -52,8 +52,8 @@ def append_to_logs(subdir: str, filename: str, text: Union[str, list, dict]):
 async def main():
     sensitive_data = {
         'https://*.linkedin.com': {
-            'x_username': 'hundopbrown@gmail.com',
-            'x_password': 'Banana09',  # 'x_placeholder': '<actual secret value>',
+            'x_username': os.getenv("EMAIL_ADDRESS"),
+            'x_password': os.getenv("EMAIL_PASSWORD"),  # 'x_placeholder': '<actual secret value>',
         },
     }
     task = """
